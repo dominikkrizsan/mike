@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- fontawasome -->
+    <script
+      src="https://kit.fontawesome.com/6febbd9845.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <title>Coach</title>
+  </head>
+  <body>
+    <!-- Header - Main Screen -->
+    <h1></h1>
+    <div class="bg-main">
+      <div class="container">
+        <!-- hamburger -->
+        <header id="main-nav">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <div class="social-media">
+                  <a
+                    href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBpgVhkBLDNVDZxLgBcVlNZrMxRXTZLkSZWsLWWwJBslmTvRxxfzPhMctpztgStnXlqwDNx"
+                    target="__blank"
+                  >
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/miklos.keszei"
+                    target="__blank"
+                    ><i class="fa-brands fa-facebook fa-xl"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/miklos_mike_keszei/"
+                    target="__blank"
+                    ><i class="fa-brands fa-instagram fa-xl"></i
+                  ></a>
+                </div>
+                <div class="menu-wrap">
+                  <a href="#"><li>Kezdőlap</li></a>
+                  <a href="contact.html"><li>Kapcsolat</li></a>
+                </div>
+              </ul>
+            </div>
+          </nav>
+
+          <div id="header-content">
+            <div
+              class="header-content-inner"
+              data-aos="fade-left"
+              data-aos-duration="2500"
+            >
+              <h1>Személyi Edzés</h1>
+              <i class="fa-solid fa-dumbbell fa-2xl"></i>
+            </div>
+            <div
+              class="header-content-inner"
+              data-aos="fade-right"
+              data-aos-duration="2500"
+            >
+              <h1>Személyre Szabott Étrend</h1>
+              <i class="fa-solid fa-utensils fa-2xl"></i>
+            </div>
+            <div
+              class="btn-container"
+              data-aos="flip-up"
+              data-aos-duration="2500"
+            >
+              <a href="contact.html" class="btn">Kapcsolat</a>
+            </div>
+          </div>
+        </header>
+      </div>
+      <a href="#about-main"><div class="arrow"></div></a>
+    </div>
+
+    <div class="bg-all">
+      <!-- About -->
+      <section id="about-main" data-aos="fade-up">
+        <div class="container">
+          <h2 class="about-me py-3">Rólam</h2>
+          <div class="bottom-line"></div>
+          <div class="about-grid-container">
+            <img src="img/about.png" alt="" />
+            <div class="about-text">
+              <div class="flex-container-about">
+                <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Doloribus, magnam.
+                </p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facilis officia et accusantium unde fugiat libero quaerat,
+                consequatur tempora. Veniam deleniti modi maxime non, alias
+                numquam sint porro perspiciatis iusto consequatur!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Home Content -->
+      <section id="home-content" data-aos="fade-up">
+        <div class="container">
+          <div id="achieve">
+            <div class="paragraph">
+              <h2 class="py-3">A következőkben tudok segíteni</h2>
+              <div class="bottom-line"></div>
+              <div id="moz-container">
+                <div class="moz-img">
+                  <img src="./img/home-moz/diet.jpg" alt="diet" />
+                  <p class="moz-text">Étrend</p>
+                </div>
+                <div class="moz-img">
+                  <img src="./img/home-moz/musclemass.jpg" alt="mass" />
+                  <p class="moz-text">
+                    Izomtömeg <br />
+                    növelés
+                  </p>
+                </div>
+                <div class="moz-img">
+                  <img src="./img/home-moz/rehabilitation.jpg" alt="rehab" />
+                  <p class="moz-text">Rehabilitáció</p>
+                </div>
+                <div class="moz-img">
+                  <img src="./img/home-moz/strength.jpg" alt="strength" />
+                  <p class="moz-text">
+                    Erő <br />
+                    fejlesztés
+                  </p>
+                </div>
+                <div class="moz-img">
+                  <img src="./img/home-moz/technique.jpg" alt="tech" />
+                  <p class="moz-text">
+                    Technika <br />
+                    javítás
+                  </p>
+                </div>
+                <div class="moz-img">
+                  <img src="./img/home-moz/weightloss.jpg" alt="wloss" />
+                  <p class="moz-text">Fogyás</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content-container">
+        <p>Copyright &copy; 2022. All rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
