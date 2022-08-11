@@ -33,6 +33,10 @@ body {
   background-color: var(--dark-color);
 }
 
+.br {
+  display: none;
+}
+
 :root {
   --main-color: coral;
   --dark-color: #333;
@@ -85,7 +89,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 30%;
+  padding-top: 20%;
 }
 
 #header-content h1 {
@@ -452,10 +456,127 @@ body {
   #moz-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .about-grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-text {
+    margin: 2rem;
+  }
+
+  .about-grid-container img {
+    margin-bottom: 2rem;
+  }
+
+  #contacts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content {
+    margin: 2rem;
+  }
+
+  .content:nth-child(2) {
+    border: none;
+  }
+
+  .contact-main-text {
+    margin-top: 2rem;
+  }
+
+  #contact-screen {
+    height: 100%;
+  }
+
+  .grid-container-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #header-content {
+    padding-top: 50%;
+  }
+}
+
+@media (max-width: 850px) {
+  #header-content {
+    padding-top: 50%;
+  }
+
+  .paragraph h2 {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 630px) {
   #moz-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  #contacts-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content:nth-child(1) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #464646;
+    border-right: none;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .content:nth-child(2) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #464646;
+    border-right: none;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .content:nth-child(3) {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #464646;
+    border-right: none;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .content:nth-child(4) {
+    border: none;
+    width: 80%;
+  }
+
+  .card {
+    margin: 2rem;
+  }
+
+  .grid-container-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #header-content {
+    padding-top: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  #header-content {
+    padding-top: 60%;
+  }
+
+  #header-content h1 {
+    text-align: center;
+  }
+
+  .header-content-inner i {
+    display: none;
+  }
+
+  .contact-main-text {
+    margin-top: 6rem;
   }
 }
